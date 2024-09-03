@@ -84,7 +84,6 @@ p {
   font-size: 17px;
 }
 
-
 h1 {
   margin-bottom: 2rem;
 }
@@ -221,7 +220,6 @@ svg {
   margin-top: -40px;
 }
 
-
 .eve-tools-container {
   background: linear-gradient(180deg, #15495f 30%, #d31900 100%);
   display: flex;
@@ -335,7 +333,6 @@ svg {
 .carousel-span {
   color: #fff;
   position: absolute;
-  font-size: 1.556em;
   font-weight: 600;
   bottom: 2.8rem;
   margin-left: 2rem;
@@ -353,15 +350,13 @@ svg {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
 }
 
 .carousel-inner .carousel-item-end,
@@ -588,6 +583,10 @@ div.container {
   .grid-container a {
     font-size: 1.944rem;
   }
+
+  .carousel-span {
+    font-size: 1.556em;
+  }
 }
 
 /* tablets  */
@@ -601,6 +600,10 @@ div.container {
 
   .grid-item-content {
     font-size: 1.5rem;
+  }
+
+  .carousel-span {
+    font-size: 1.556em;
   }
 }
 
@@ -618,4 +621,7 @@ div.container {
     font-size: 1.5rem;
   }
 
+  .carousel-span {
+    font-size: 1.3rem;
+  }
 }
