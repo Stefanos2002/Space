@@ -10,17 +10,29 @@
 .content-block {
   text-align: center;
 }
+.carousel-item .col-md-3 {
+  flex: 1 0 20%; /* Ορίζουμε 4 εικόνα ανά slide */
+}
 @media (max-width: 1281px) {
   .heading1 {
     font-size: 4em;
+  }
+  .carousel-item .col-md-3 {
+    flex: 1 0 33.333%; /* Ορίζουμε 3 εικόνες ανά slide */
   }
 }
 @media (max-width: 1025px) {
   .heading1 {
     font-size: 3em;
   }
+  .carousel-item .col-md-3 {
+    flex: 1 0 50%; /* Ορίζουμε 2 εικόνες ανά slide */
+  }
 }
 @media (max-width: 801px) {
+  .carousel-item .col-md-3 {
+    flex: 1 0 100%; /* Ορίζουμε 1 εικόνες ανά slide */
+  }
 }
 @media (max-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -29,6 +41,9 @@
   /* smartphones, Android phones, landscape iPhone */
   .content-block img {
     width: 15em !important;
+  }
+  .carousel-item .col-md-3 {
+    flex: 1 0 100%; /* Ορίζουμε 1 εικόνα ανά slide */
   }
 }
 @media (max-width: 320px) {
@@ -85,7 +100,6 @@ h2.text-uppercase {
 p {
   font-size: 17px;
 }
-
 
 h1 {
   margin-bottom: 2rem;
@@ -223,7 +237,6 @@ svg {
   margin-top: -40px;
 }
 
-
 .eve-tools-container {
   background: linear-gradient(180deg, #15495f 30%, #d31900 100%);
   display: flex;
@@ -354,16 +367,14 @@ svg {
   cursor: pointer;
 }
 
-
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
-
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
 
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start {
@@ -630,5 +641,4 @@ div.container {
   .carousel-span {
     font-size: 1.3rem;
   }
-
 }
