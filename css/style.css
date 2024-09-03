@@ -84,6 +84,7 @@ p {
   font-size: 17px;
 }
 
+
 h1 {
   margin-bottom: 2rem;
 }
@@ -220,6 +221,7 @@ svg {
   margin-top: -40px;
 }
 
+
 .eve-tools-container {
   background: linear-gradient(180deg, #15495f 30%, #d31900 100%);
   display: flex;
@@ -350,14 +352,16 @@ svg {
   cursor: pointer;
 }
 
-.carousel-inner .carousel-item-end.active,
-.carousel-inner .carousel-item-next {
-  transform: translateX(25%);
-}
-.carousel-inner .carousel-item-start.active,
-.carousel-inner .carousel-item-prev {
-  transform: translateX(-25%);
-}
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+
 
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start {
@@ -624,4 +628,5 @@ div.container {
   .carousel-span {
     font-size: 1.3rem;
   }
+
 }
