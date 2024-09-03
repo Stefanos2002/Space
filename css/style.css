@@ -13,9 +13,6 @@
   }
 }
 @media (max-width: 801px) {
-  .heading1 {
-    font-size: 2em;
-  }
 }
 @media (max-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
