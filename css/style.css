@@ -3,7 +3,9 @@
   text-align: center;
 }
 .menu {
-  width: 25px !important;
+  background-color: black;
+  padding: 15px;
+  border-radius: 20px;
 }
 .content-block {
   text-align: center;
