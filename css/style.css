@@ -42,6 +42,7 @@ h2.text-uppercase {
   overflow: hidden; /* Ensure the GIF doesn't overflow the container */
   height: 100vh;
   padding-top: 12rem;
+  margin: 0 !important;
 }
 
 p {
