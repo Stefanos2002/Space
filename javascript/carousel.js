@@ -3,13 +3,13 @@ function initializeCarousel(carouselId) {
 
   let items = document.querySelectorAll(`#${carouselId} .carousel-item`);
 
-  let slide;  // Determine the number of slides to display
+  let slide;
   if (viewportWidth <= 767) {
-    slide = 2;  // 2 slides for phones
+    slide = 2;
   } else if (viewportWidth <= 1199) {
-    slide = 3;  // 3 slides for tablets
+    slide = 3;
   } else {
-    slide = 4;  // 4 slides for desktops and larger screens
+    slide = 4;
   }
 
   items.forEach((e) => {
