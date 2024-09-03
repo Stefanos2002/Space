@@ -92,11 +92,46 @@ h1 {
     margin-top: 4.5rem;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .grid-container a {
+    font-size: 1.5rem;
+  }
+
+  .image-text-container {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
   h1 {
     margin-bottom: 1rem;
   }
 
+  .grid-container {
+    grid-template-columns: (2, 1fr);
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .grid-container a {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .image-text-container {
+    margin-bottom: 2rem;
+  }
+
+  .icon-container {
+    font-size: 1.5rem; /* Adjust icon size if needed */
+  }
   /* .carousel {
     flex-direction: column;
     padding: 20px;
