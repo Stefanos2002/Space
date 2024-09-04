@@ -563,13 +563,10 @@ div.container {
   margin: 0 15em;
 }
 
-/* .footer-item-container .footer-item {
-  text-align: start;
-} */
-
 .footer-item {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
+  gap: 18px;
 }
 
 .footer-item h6 {
@@ -578,7 +575,10 @@ div.container {
   font-family: "Barlow Condensed";
   font-weight: 600;
   color: white;
-  margin-bottom: 18px;
+}
+
+.mail {
+  margin-top: 12px;
 }
 
 .footer-item a {
