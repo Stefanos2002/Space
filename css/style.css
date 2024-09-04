@@ -10,7 +10,8 @@
 .content-block {
   text-align: center;
 }
-.carousel-item .col-md-3 {
+.carousel-item .col-md-3,
+.carousel-item  .col-lg-3 {
   flex: 1 0 20%; /* Ορίζουμε 4 εικόνα ανά slide */
 }
 
@@ -610,7 +611,8 @@ div.container {
   .heading1 {
     font-size: 4em;
   }
-  .carousel-item .col-md-3 {
+  .carousel-item .col-md-3,
+  .carousel-item .col-lg-3 {
     flex: 1 0 33.333%; /* Ορίζουμε 3 εικόνες ανά slide */
   }
 }
@@ -618,12 +620,14 @@ div.container {
   .heading1 {
     font-size: 3em;
   }
-  .carousel-item .col-md-3 {
+  .carousel-item .col-md-3,
+  .carousel-item .col-lg-3 {
     flex: 1 0 50%; /* Ορίζουμε 2 εικόνες ανά slide */
   }
 }
 @media (max-width: 801px) {
-  .carousel-item .col-md-3 {
+  .carousel-item .col-md-3,
+  .carousel-item .col-lg-3 {
     flex: 1 0 100%; /* Ορίζουμε 1 εικόνες ανά slide */
   }
 }
@@ -635,7 +639,8 @@ div.container {
   .content-block img {
     width: 15em !important;
   }
-  .carousel-item .col-md-3 {
+  .carousel-item .col-md-3,
+  .carousel-item .col-lg-3 {
     flex: 1 0 100%; /* Ορίζουμε 1 εικόνα ανά slide */
   }
 }
