@@ -3,18 +3,19 @@ function initializeCarousel(carouselId) {
 
   let items = document.querySelectorAll(`#${carouselId} .carousel-item`);
 
-  let slide;
-  if (viewportWidth <= 767) {
-    slide = 2;
-  } else if (viewportWidth <= 1199) {
-    slide = 3;
-  } else {
-    slide = 4;
-  }
+  let slide = 4;
+  // if (viewportWidth <= 767) {
+  //   slide = 2;
+  // } else if (viewportWidth <= 1199) {
+  //   slide = 3;
+  // } else {
+  //   slide = 4;
+  // }
 
   items.forEach((e) => {
     let next = e.nextElementSibling;
-    for (let i = 0; i < slide - 1; i++) {  // Clone the required number of slides
+    for (let i = 0; i < slide - 1; i++) {
+      // Clone the required number of slides
       if (!next) {
         // Wrap carousel by using first child
         next = items[0];

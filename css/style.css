@@ -13,42 +13,6 @@
 .carousel-item .col-md-3 {
   flex: 1 0 20%; /* Ορίζουμε 4 εικόνα ανά slide */
 }
-@media (max-width: 1281px) {
-  .heading1 {
-    font-size: 4em;
-  }
-  .carousel-item .col-md-3 {
-    flex: 1 0 33.333%; /* Ορίζουμε 3 εικόνες ανά slide */
-  }
-}
-@media (max-width: 1025px) {
-  .heading1 {
-    font-size: 3em;
-  }
-  .carousel-item .col-md-3 {
-    flex: 1 0 50%; /* Ορίζουμε 2 εικόνες ανά slide */
-  }
-}
-@media (max-width: 801px) {
-  .carousel-item .col-md-3 {
-    flex: 1 0 100%; /* Ορίζουμε 1 εικόνες ανά slide */
-  }
-}
-@media (max-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
-@media (max-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-  .content-block img {
-    width: 15em !important;
-  }
-  .carousel-item .col-md-3 {
-    flex: 1 0 100%; /* Ορίζουμε 1 εικόνα ανά slide */
-  }
-}
-@media (max-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-}
 
 body {
   background: rgba(0, 0, 0, 0.5);
@@ -641,4 +605,40 @@ div.container {
   .carousel-span {
     font-size: 1.3rem;
   }
+}
+@media (max-width: 1281px) {
+  .heading1 {
+    font-size: 4em;
+  }
+  .carousel-item .col-md-3 {
+    flex: 1 0 33.333%; /* Ορίζουμε 3 εικόνες ανά slide */
+  }
+}
+@media (max-width: 1025px) {
+  .heading1 {
+    font-size: 3em;
+  }
+  .carousel-item .col-md-3 {
+    flex: 1 0 50%; /* Ορίζουμε 2 εικόνες ανά slide */
+  }
+}
+@media (max-width: 801px) {
+  .carousel-item .col-md-3 {
+    flex: 1 0 100%; /* Ορίζουμε 1 εικόνες ανά slide */
+  }
+}
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .content-block img {
+    width: 15em !important;
+  }
+  .carousel-item .col-md-3 {
+    flex: 1 0 100%; /* Ορίζουμε 1 εικόνα ανά slide */
+  }
+}
+@media (max-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 }
