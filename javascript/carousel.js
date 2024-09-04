@@ -8,7 +8,7 @@ function initializeCarousel(carouselId) {
       slide = 2;
     } else if (viewportWidth <= 1199) {
       slide = 3;
-    } else {
+    } else {  
       slide = 4;
     }
 
