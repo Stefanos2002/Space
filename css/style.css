@@ -371,7 +371,7 @@ svg {
 
 /* new */
 .contact-box {
-  display: flex;
+  display: flex;  
   height: 70vh;
 }
 
@@ -554,6 +554,54 @@ div#contact.container-fluid.section {
 }
 div.container {
   margin: 0;
+}
+
+.footer-item-container { 
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.footer-item h6 {
+  /* font-size: 21px; */
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Barlow Condensed";
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.footer-item a {
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  color: #adb5bd;
+  font-size: 17px;
+}
+
+.footer-item a:hover {
+  opacity: 0.6;
+}
+
+footer {
+  background-color: #222;
+  padding: 20px 0;
+}
+
+footer p.text-center {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 /* Desktop and above */
