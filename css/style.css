@@ -663,6 +663,18 @@ footer p.text-center {
   .carousel-item .col-lg-3 {
     flex: 1 0 33.333%; /* Ορίζουμε 3 εικόνες ανά slide */
   }
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33%);
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33%);
+  }
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+  }
 }
 @media (max-width: 1025px) {
   .heading1 {
@@ -672,11 +684,35 @@ footer p.text-center {
   .carousel-item .col-lg-3 {
     flex: 1 0 50%; /* Ορίζουμε 2 εικόνες ανά slide */
   }
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+  }
 }
 @media (max-width: 801px) {
   .carousel-item .col-md-3,
   .carousel-item .col-lg-3 {
     flex: 1 0 100%; /* Ορίζουμε 1 εικόνες ανά slide */
+  }
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(70%);
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-70%);
+  }
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0);
   }
 }
 @media (max-width: 600px) {
