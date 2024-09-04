@@ -1,16 +1,16 @@
 function initializeCarousel(carouselId) {
-  let viewportWidth = window.innerWidth;
+    let viewportWidth = window.innerWidth;
 
-  let items = document.querySelectorAll(`#${carouselId} .carousel-item`);
+    let items = document.querySelectorAll(`#${carouselId} .carousel-item`);
 
-  let slide;
-  if (viewportWidth <= 767) {
-    slide = 2;
-  } else if (viewportWidth <= 1199) {
-    slide = 3;
-  } else {
-    slide = 4;
-  }
+    let slide;
+    if (viewportWidth <= 767) {
+      slide = 2;
+    } else if (viewportWidth <= 1199) {
+      slide = 3;
+    } else {
+      slide = 4;
+    }
 
   items.forEach((e) => {
     let next = e.nextElementSibling;
