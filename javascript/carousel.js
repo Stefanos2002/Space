@@ -1,7 +1,7 @@
 function initializeCarousel(carouselId) {
-    let viewportWidth = window.innerWidth;
+  let viewportWidth = window.innerWidth;
 
-    let items = document.querySelectorAll(`#${carouselId} .carousel-item`);
+  let items = document.querySelectorAll(`#${carouselId} .carousel-item`);
 
   let slide = 4;
   items.forEach((e) => {

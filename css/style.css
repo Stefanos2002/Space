@@ -11,7 +11,7 @@
   text-align: center;
 }
 .carousel-item .col-md-3,
-.carousel-item  .col-lg-3 {
+.carousel-item .col-lg-3 {
   flex: 1 0 20%; /* Ορίζουμε 4 εικόνα ανά slide */
 }
 
@@ -265,6 +265,15 @@ svg {
 
 .image-text-container span {
   font-weight: 600;
+}
+
+#about.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+#recruitment {
+  display: flex;
+  justify-content: center;
 }
 
 .data-number {
@@ -636,6 +645,9 @@ div.container {
   .carousel-item .col-lg-3 {
     flex: 1 0 50%; /* Ορίζουμε 2 εικόνες ανά slide */
   }
+  #carouselTwo .carousel-inner {
+    width: 45rem;
+  }
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(50%);
@@ -654,13 +666,16 @@ div.container {
   .carousel-item .col-lg-3 {
     flex: 1 0 100%; /* Ορίζουμε 1 εικόνες ανά slide */
   }
+  #carouselTwo .carousel-inner {
+    width: 25rem;
+  }
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
-    transform: translateX(70%);
+    transform: translateX(100%);
   }
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
-    transform: translateX(-70%);
+    transform: translateX(-100%);
   }
   .carousel-inner .carousel-item-end,
   .carousel-inner .carousel-item-start {
