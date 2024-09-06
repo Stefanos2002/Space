@@ -10,9 +10,9 @@
 .content-block {
   text-align: center;
 }
-.carousel-item .col-md-3,
-.carousel-item .col-lg-3 {
-  flex: 1 0 20%; /* Ορίζουμε 4 εικόνα ανά slide */
+#carouselOne .carousel-item .col-md-3,
+#carouselOne .carousel-item .col-lg-3 {
+  flex: 1 0 100%; /* Ορίζουμε 1 εικόνα ανά slide */
 }
 
 body {
@@ -40,18 +40,6 @@ h2.text-uppercase {
   margin-bottom: 3rem;
   color: #ffffff;
 }
-
-/* .gif-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-   background-image: url("https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif"); 
-  background-size: cover;
-  background-position: center;
-  z-index: -1; 
-}  */
 
 .bg-image {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust background color if needed */
@@ -297,14 +285,42 @@ svg {
   background-color: #ffffff26;
 }
 
-.carousel.slide {
+#carouselOne.carousel.slide {
+  /* background: linear-gradient(180deg, #15495f 30%, #d31900 100%); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+#carouselTwo.carousel.slide {
   background: linear-gradient(180deg, #15495f 30%, #d31900 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
+/* .gif-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background-image: url("https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif"); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
+}  */
 
 [data-bs-theme="dark"] .carousel .carousel-control-prev-icon,
 [data-bs-theme="dark"] .carousel .carousel-control-next-icon {
@@ -341,17 +357,33 @@ svg {
   cursor: pointer;
 }
 
-.carousel-inner .carousel-item-end.active,
-.carousel-inner .carousel-item-next {
+/* carousel1 */
+#carouselOne .carousel-inner .carousel-item-end.active,
+#carouselOne .carousel-inner .carousel-item-next {
+  transform: translateX(100%);
+}
+#carouselOne .carousel-inner .carousel-item-start.active,
+#carouselOne .carousel-inner .carousel-item-prev {
+  transform: translateX(-100%);
+}
+
+#carouselOne .carousel-inner .carousel-item-end,
+#carouselOne .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+/* carousel2 */
+#carouselTwo .carousel-inner .carousel-item-end.active,
+#carouselTwo .carousel-inner .carousel-item-next {
   transform: translateX(25%);
 }
-.carousel-inner .carousel-item-start.active,
-.carousel-inner .carousel-item-prev {
+#carouselTwo .carousel-inner .carousel-item-start.active,
+#carouselTwo .carousel-inner .carousel-item-prev {
   transform: translateX(-25%);
 }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
+#carouselTwo .carousel-inner .carousel-item-end,
+#carouselTwo .carousel-inner .carousel-item-start {
   transform: translateX(0);
 }
 
@@ -669,20 +701,20 @@ footer p.text-center {
   .heading1 {
     font-size: 4em;
   }
-  .carousel-item .col-md-3,
-  .carousel-item .col-lg-3 {
+  #carouselTwo .carousel-item .col-md-3,
+  #carouselTwo .carousel-item .col-lg-3 {
     flex: 1 0 33.333%; /* Ορίζουμε 3 εικόνες ανά slide */
   }
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
+  #carouselTwo .carousel-inner .carousel-item-end.active,
+  #carouselTwo .carousel-inner .carousel-item-next {
     transform: translateX(33%);
   }
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
+  #carouselTwo .carousel-inner .carousel-item-start.active,
+  #carouselTwo .carousel-inner .carousel-item-prev {
     transform: translateX(-33%);
   }
-  .carousel-inner .carousel-item-end,
-  .carousel-inner .carousel-item-start {
+  #carouselTwo .carousel-inner .carousel-item-end,
+  #carouselTwo .carousel-inner .carousel-item-start {
     transform: translateX(0);
   }
 }
@@ -690,44 +722,44 @@ footer p.text-center {
   .heading1 {
     font-size: 3em;
   }
-  .carousel-item .col-md-3,
-  .carousel-item .col-lg-3 {
+  #carouselTwo .carousel-item .col-md-3,
+  #carouselTwo .carousel-item .col-lg-3 {
     flex: 1 0 50%; /* Ορίζουμε 2 εικόνες ανά slide */
   }
   #carouselTwo .carousel-inner {
     width: 45rem;
   }
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
+  #carouselTwo .carousel-inner .carousel-item-end.active,
+  #carouselTwo .carousel-inner .carousel-item-next {
     transform: translateX(50%);
   }
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
+  #carouselTwo .carousel-inner .carousel-item-start.active,
+  #carouselTwo .carousel-inner .carousel-item-prev {
     transform: translateX(-50%);
   }
-  .carousel-inner .carousel-item-end,
-  .carousel-inner .carousel-item-start {
+  #carouselTwo .carousel-inner .carousel-item-end,
+  #carouselTwo .carousel-inner .carousel-item-start {
     transform: translateX(0);
   }
 }
 @media (max-width: 801px) {
-  .carousel-item .col-md-3,
-  .carousel-item .col-lg-3 {
+  #carouselTwo .carousel-item .col-md-3,
+  #carouselTwo .carousel-item .col-lg-3 {
     flex: 1 0 100%; /* Ορίζουμε 1 εικόνες ανά slide */
   }
   #carouselTwo .carousel-inner {
     width: 25rem;
   }
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
+  #carouselTwo .carousel-inner .carousel-item-end.active,
+  #carouselTwo .carousel-inner .carousel-item-next {
     transform: translateX(100%);
   }
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
+  #carouselTwo .carousel-inner .carousel-item-start.active,
+  #carouselTwo .carousel-inner .carousel-item-prev {
     transform: translateX(-100%);
   }
-  .carousel-inner .carousel-item-end,
-  .carousel-inner .carousel-item-start {
+  #carouselTwo .carousel-inner .carousel-item-end,
+  #carouselTwo .carousel-inner .carousel-item-start {
     transform: translateX(0);
   }
 }
@@ -742,8 +774,8 @@ footer p.text-center {
   .content-block img {
     width: 15em !important;
   }
-  .carousel-item .col-md-3,
-  .carousel-item .col-lg-3 {
+  #carouselTwo .carousel-item .col-md-3,
+  #carouselTwo .carousel-item .col-lg-3 {
     flex: 1 0 100%; /* Ορίζουμε 1 εικόνα ανά slide */
   }
 }
