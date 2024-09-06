@@ -188,6 +188,7 @@ nav.navbar {
 svg {
   pointer-events: none;
 }
+
 .heading1 {
   font-weight: bold;
   margin-top: -40px;
@@ -201,10 +202,11 @@ svg {
 }
 
 .eve-tools-container p {
-  font-family: 'Monoton', 'Carter One', cursive;
+  font-family: "Monoton", "Carter One", cursive;
+  color: rgb(188, 188, 188);
   position: relative;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 3rem;
   font-weight: bold;
 
   &::before {
@@ -213,7 +215,8 @@ svg {
     inset: 0;
     transform: rotatex(180deg) translatey(15px);
     transform-origin: 50% 100%;
-    mask: linear-gradient(transparent, #000);
+    filter: blur(4px);
+    mask: linear-gradient(transparent 30%, white 90%);
   }
 }
 
