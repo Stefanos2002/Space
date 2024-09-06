@@ -409,6 +409,10 @@ svg {
 
 /* new */
 .contact-box {
+  background-image: url("/img/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   height: 70vh;
 }
@@ -423,11 +427,11 @@ svg {
 }
 
 .contact-box .left-section {
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
 }
 
 .contact-box .right-section {
-  background-color: #0a0a0a;
+  /* background-color: #0a0a0a; */
 }
 
 .contact-box .content {
